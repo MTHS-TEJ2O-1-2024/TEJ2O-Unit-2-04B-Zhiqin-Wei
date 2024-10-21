@@ -1,8 +1,15 @@
 /* Copyright (c) 2020 MTHS All rights reserved
  *
- * Created by:Daly
- * Created on: Sep 2024
- * This program ...
+ * Created by:Daly Wei 
+ * Created on: oct 2024
+ * This program from get the temperature
 */
 
-basic.showString('Hello, World!')
+basic.showIcon(IconNames.Happy)
+
+input.onButtonPressed(Button.A, function () {
+    let temp = input.temperature() 
+    basic.clearScreen() 
+    basic.showString(temp + " C") 
+})
+
